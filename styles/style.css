@@ -15,7 +15,8 @@ html {
 
 .page {
   margin: auto;
-  padding-top: 102px;
+  display: flex;
+  align-items: center;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -191,8 +192,9 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
   border: 1px solid #fff;
@@ -201,8 +203,8 @@ ol {
 
 .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
-  inset: 1px;
+  width: 16px;
+  height: 16px;
   opacity: 0;
   background-color: #fff;
   transition: all 0.2s ease-in;
